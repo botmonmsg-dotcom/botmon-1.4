@@ -1,0 +1,82 @@
+
+
+.custom-tooltip {
+  --bs-tooltip-bg: #8b0000;
+  --bs-tooltip-color: white;
+}
+label {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.navbar{
+    background-color: #8b0000;
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    left: 2%;
+    z-index: 1;
+}
+
+strong{
+ font-size: 2rem;
+}
+.testmode{
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 1rem;
+    padding: 1% 5%;
+}
+
+.main-container{
+    margin: 12rem 4%;
+}
+.card {
+    text-align: center;
+}
+.offer{
+    width: 50%;
+    margin: auto;
+}
+
+.main_sections{
+    font-size: 3rem;
+}
+
+
+#get_subscription {
+    margin: 2rem auto;
+    width: 25rem;
+}
+
+#get_access {
+    width: 25rem;
+    margin: 2rem auto;
+}
+
+#get_product {
+    width: 25rem;
+    margin: 2rem auto;
+}
+
+#get_subscription:hover {
+    border-color: #8b0000;
+    border-width: 2px;
+}
+
+#get_access:hover {
+    border-color: #8b0000;
+    border-width: 2px;
+
+}
+
+#get_product:hover {
+    border-color: #8b0000;
+    border-width: 2px;
+
+}
+span{
+    width: 14rem;
+}
