@@ -142,7 +142,17 @@ hr {
     margin-bottom: 4rem;
 }
 
+@media (max-width: 700px) {
+    #nav_list_group {
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
 
+    .main-container {
+        margin: 20rem 4%;
+    }
+
+}
 
 @media (prefers-color-scheme: light) {
     :root {
