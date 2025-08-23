@@ -10,8 +10,8 @@
     <link href="./page.css" rel="stylesheet">
 </head>
 
-
-<nav class="navbar ">
+<div id="navbar_main_position"></div>
+<nav class="navbar">
     <div class="container-fluid">
         <label>Botmon 1.4 </label>
         <div class="testmode">
@@ -27,16 +27,56 @@
 
 <body>
     <div class="main-container">
-        <section id="focus">
+        <section id="botmon">
             <label class="main_sections">Botmon</label>
             <hr style="width: 50%;">
+            <div class="row simplerow">
+                <span class="badge text-bg-secondary">Botmon-View</span>
+                <span class="badge text-bg-secondary">Botmon-Mobile</span>
+                <span class="badge text-bg-secondary">Botmon-AI</span>
+                <span class="badge text-bg-secondary"> Botmon-Notifier</span>
+            </div>
 
-            <ul>
-                <li>Cryptocurrency News</li>
-                <li>Listing Announcements</li>
-                <li>Signals</li>
-                <li>AI-Bot Trading</li>
-            </ul>
+        </section>
+        <section id="functions"> <label class="main_sections">Functions</label>
+            <hr style="width: 50%;">
+            <div class="list-group">
+                <a href="#update_botmon" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <label class="mb-1">Get Notified - Get Access - Get Botmon</label>
+                        <small class="text-body-light"><i data-feather="codepen"></i></small>
+                    </div>
+                    <p class="mb-1">Signals notify users through webpage or through email</p>
+                    <p class="mb-1">Access to Botmons functionality allows the user to configure the AI-Bot, that has
+                        different types of
+                        execution. [Listings, Coin Bot, Botmon Bot]</p>
+                    <p class="mb-1">Claim The complete product and notify others with Botmon</p>
+                </a>
+                <a href="#update_botmon" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <label class="mb-1">Signals - AI-Bot - Complete Pack</label>
+                        <small class="text-body-light"><i data-feather="codesandbox"></i></small>
+                    </div>
+                    <p class="mb-1">Buy Sell Signals</p>
+                    <p class="mb-1">Set up the AI-Bot and start trading</p>
+                    <p class="mb-1">Get Botmon and its advantages </p>
+                    <small class="text-body-light">e.g. Updates, AI-Bot, News, Pumps, Buy Signals, External Signals,
+                        External Indicators, Fast Indicators, The Botmon Indicator and more ... </small>
+                </a>
+                <a href="#update_botmon" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <label class="mb-1">Up to Date</label>
+                        <small class="text-body-light"><i data-feather="check-square"></i></small>
+                    </div>
+                    <p class="mb-1"> Be Up to date with new listings, with pump-dump price changes of various
+                        cryptocurrencies and
+                        get external information
+                        of currencies </p>
+                    <small class="text-body-light">e.g. Updates, Locks, Unlocks Actual Pump Events on multiple
+                        exchanges</small>
+                </a>
+            </div>
+
         </section>
 
         <section id="offers">
@@ -44,104 +84,307 @@
             <hr style="width: 50%;">
 
             <div class="row">
-                <div class="card shadow" id="get_subscription" onclick="showSection('subscription')"
-                    data-bs-toggle="collapse" href="#subscription">
-                    <div class="card-body" data-bs-toggle="tooltip" data-bs-placement="top"
-                        data-bs-custom-class="custom-tooltip" data-bs-title="Get Notified for Buy Signals">
-                        <label class="card-title">Subscription</label>
-                        <p>10€/Month</p>
-                    </div>
-                </div>
-                <div class="card shadow" id="get_access" onclick="showSection('access')" data-bs-toggle="collapse"
-                    href="#access">
-                    <div class="card-body" data-bs-toggle="tooltip" data-bs-placement="top"
-                        data-bs-custom-class="custom-tooltip"
-                        data-bs-title="Get Access to Botmons complete Functionality.">
-                        <label class="card-title">Access</label>
-                        <p>100€/Month</p>
+                <a class="anchor-define card shadow" href="#products_info">
+                    <div id="get_subscription" onclick="showSection('subscription')" data-bs-toggle="collapse"
+                        href="#subscription">
 
+                        <div class="card-body" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip" data-bs-title="Get Notified for Buy Signals">
+                            <label class="card-title">Subscription</label>
+                            <p>10€/Month</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card shadow" id="get_product" onclick="showSection('product')" data-bs-toggle="collapse"
-                    href="#product">
-                    <div class="card-body " data-bs-toggle="tooltip" data-bs-placement="top"
-                        data-bs-custom-class="custom-tooltip" data-bs-title="Claim Product: Botmon">
-                        <label class="card-title">Product</label>
-                        <p>x/Month</p>
+                </a>
+                <a class="anchor-define card shadow" href="#products_info">
+                    <div id="get_access" onclick="showSection('access')" data-bs-toggle="collapse" href="#access">
+                        <div class="card-body" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Get Access to Botmons complete Functionality.">
+                            <label class="card-title">Access</label>
+                            <p>100€/Month</p>
+
+                        </div>
                     </div>
-                </div>
+                </a>
+                <a class="anchor-define card shadow" href="#products_info">
+                    <div id="get_product" onclick="showSection('product')" data-bs-toggle="collapse" href="#product">
+                        <div class="card-body " data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip" data-bs-title="Claim Product: Botmon">
+                            <label class="card-title">Product</label>
+                            <p>x/Month</p>
+                        </div>
+                    </div>
+                </a>
             </div>
 
         </section>
         <hr>
-        <section id="subscription" class="collapse offer">
-            <label>Subscription </label>
-            <form class="container-fluid">
-                <br>
-                <div class="input-group">
-                    <span class="input-group-text" id="subscriber">Username</span>
-                    <input type="text" class="form-control" placeholder="Username" aria-describedby="subscriber">
-                </div><br>
-                <div class="input-group">
-                    <span class="input-group-text" id="submail">E-Mail</span>
-                    <input type="email" class="form-control" placeholder="E-Mail" aria-describedby="submail">
-                </div><br>
-                <div class="input-group">
-                    <span class="input-group-text" id="submessage">Message</span>
-                    <input type="text" class="form-control" placeholder="Message" aria-describedby="submessage">
-                </div><br>
-                <input class="btn btn-outline-success" type="button" value="Subscribe">
-            </form>
-        </section>
+        <section id="products_info">
+            <section id="subscription" class="collapse offer">
+                <label data-bs-toggle="offcanvas" data-bs-target="#offcanvas_subscription"
+                    aria-controls="offcanvasBottom">Subscription <i data-feather="bell"></i></label>
+                <form action="mailto:test@gmail.com" target="_blank" class="container-fluid">
+                    <br>
+                    <input  class="form-control" style="visibility: hidden;" value="Subscription" />
+                    <div class="input-group">
+                        <span class="input-group-text" id="subscriber">Username</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-describedby="subscriber">
+                    </div><br>
+                    <div class="input-group">
+                        <span class="input-group-text" id="submail">E-Mail</span>
+                        <input type="email" class="form-control" placeholder="E-Mail" aria-describedby="submail">
+                    </div><br>
+                    <div class="input-group">
+                        <span class="input-group-text" id="submessage">Message</span>
+                        <input type="text" class="form-control" placeholder="Message" aria-describedby="submessage">
+                    </div><br>
+                    <input class="btn btn-outline-success" type="submit" value="Subscribe">
+                </form>
+            </section>
 
-        <section id="access" class="collapse offer">
-            <label>Access </label>
-            <form class="container-fluid"><br>
-                <div class="input-group">
-                    <span class="input-group-text" id="subscriber">Username</span>
-                    <input type="text" class="form-control" placeholder="Username" aria-describedby="subscriber">
-                </div><br>
-                <div class="input-group">
-                    <span class="input-group-text" id="submail">E-Mail</span>
-                    <input type="email" class="form-control" placeholder="E-Mail" aria-describedby="submail">
-                </div><br>
-                <div class="input-group">
-                    <span class="input-group-text" id="submessage">Message</span>
-                    <input type="text" class="form-control" placeholder="Message" aria-describedby="submessage">
-                </div><br>
-                <input class="btn btn-outline-success" type="button" value="Get Access">
-            </form>
-        </section>
+            <section id="access" class="collapse offer">
+                <label data-bs-toggle="offcanvas" data-bs-target="#offcanvas_access"
+                    aria-controls="offcanvasBottom">Access
+                    <i data-feather="codepen"></i></label>
+                <form action="mailto:test@gmail.com" target="_blank"  class="container-fluid"><br>
+                    <input  class="form-control" style="visibility: hidden;" value="Access"/>
+                    <div class="input-group">
+                        <span class="input-group-text" id="subscriber">Username</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-describedby="subscriber">
+                    </div><br>
+                    <div class="input-group">
+                        <span class="input-group-text" id="submail">E-Mail</span>
+                        <input type="email" class="form-control" placeholder="E-Mail" aria-describedby="submail">
+                    </div><br>
+                    <div class="input-group">
+                        <span class="input-group-text" id="submessage">Message</span>
+                        <input type="text" class="form-control" placeholder="Message" aria-describedby="submessage">
+                    </div><br>
+                    <input class="btn btn-outline-success" type="submit" value="Get Access">
+                </form>
+            </section>
 
-        <section id="product" class="collapse offer">
-            <label>Product </label>
-            <form class="container-fluid"><br>
-                <div class="input-group">
-                    <span class="input-group-text" id="subscriber">Username</span>
-                    <input type="text" class="form-control" placeholder="Username" aria-describedby="subscriber">
-                </div><br>
-                <div class="input-group">
-                    <span class="input-group-text" id="submail">E-Mail</span>
-                    <input type="email" class="form-control" placeholder="E-Mail" aria-describedby="submail">
-                </div><br>
-                <div class="input-group">
-                    <span class="input-group-text" id="submessage">Message</span>
-                    <input type="text" class="form-control" placeholder="Message" aria-describedby="submessage">
-                </div><br>
-                <input class="btn btn-outline-success" type="button" value="Get Product">
-            </form>
+            <section id="product" class="collapse offer">
+                <label data-bs-toggle="offcanvas" data-bs-target="#offcanvas_product"
+                    aria-controls="offcanvasBottom">Product <i data-feather="codesandbox"></i></label>
+                <form action="mailto:test@gmail.com" target="_blank"  class="container-fluid"><br>
+                    <input  class="form-control" style="visibility: hidden;" value="Product" />
+                    <div class="input-group">
+                        <span class="input-group-text" id="subscriber">Username</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-describedby="subscriber">
+                    </div><br>
+                    <div class="input-group">
+                        <span class="input-group-text" id="submail">E-Mail</span>
+                        <input type="email" class="form-control" placeholder="E-Mail" aria-describedby="submail">
+                    </div><br>
+                    <div class="input-group">
+                        <span class="input-group-text" id="submessage">Message</span>
+                        <input type="text" class="form-control" placeholder="Message" aria-describedby="submessage">
+                    </div><br>
+                    <input class="btn btn-outline-success" type="submit" value="Get Product">
+                </form>
+            </section>
         </section>
     </div>
-    <section id="contact">
-        <p>We are Hiring</p>
-        <p>Recommendations</p>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas_subscription" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+            <label style="display: block;" class="offcanvas-title" id="offcanvasLabel">Get Notified</label>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row simplerow">
+                <span class="badge text-bg-secondary">Email Notification for Buy Signals by The Botmon Indicator</span>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas_access" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+            <label style="display: block;" class="offcanvas-title" id="offcanvasLabel">Access Botmons
+                functionality</label>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row simplerow">
+                <span class="badge text-bg-secondary">Access to Botmon Pack - Webpage and App</span>
+                <span class="badge text-bg-secondary"> Listing Announcements </span>
+                <span class="badge text-bg-secondary"> Cryptocurrency News</span>
+                <span class="badge text-bg-secondary"> Signals</span>
+                <span class="badge text-bg-secondary"> AI-Bot Trading</span>
+                <span class="badge text-bg-secondary"> Notification by The Botmon Indicator</span>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas_product" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+            <label style="display: block;" class="offcanvas-title" id="offcanvasLabel">Claim Product - Botmon</label>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row simplerow">
+                <span class="badge text-bg-secondary">Access to Botmon Pack - Webpage and App</span>
+                <span class="badge text-bg-secondary"> Listing Announcements </span>
+                <span class="badge text-bg-secondary"> Cryptocurrency News</span>
+                <span class="badge text-bg-secondary"> Signals</span>
+                <span class="badge text-bg-secondary"> AI-Bot Trading</span>
+                <span class="badge text-bg-secondary"> The Botmon Indicator Signal</span>
+                <span class="badge text-bg-secondary"> The Botmon Indicator Code</span>
+                <span class="badge text-bg-secondary"> New Indicator Implementation</span>
+                <span class="badge text-bg-secondary"> New Signal Implementation</span>
+            </div>
+        </div>
+    </div>
+    <section id="simple_status_info">
+        <div class="modal fade" id="simpleModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <label class="modal-title">Botmon Page Info</label>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="bg-warning p-4">This Page Is Currently On <span
+                                style="text-decoration: underline;">Test Mode</span></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section style="margin-bottom: 4%;">
+
+
+        <table style="width: 20%; margin: auto;">
+            <tr>
+                <td>
+                    <div class="list-group" style="margin:auto;text-align: center;">
+                        <a href="#" class="list-group-item list-group-item-action disabled bg-success text-light">Bottom
+                            Navigation</a>
+                        <a href="#botmon" class="list-group-item list-group-item-action">Botmon</a>
+                        <a href="#functions" class="list-group-item list-group-item-action">Functions</a>
+                        <a href="#offers" class="list-group-item list-group-item-action ">Products</a>
+                    </div>
+                </td>
+                <td>
+                    <div class="list-group" style="margin:auto;text-align: center;">
+                        <a href="#"
+                            class="list-group-item list-group-item-action disabled bg-success text-light">More...</a>
+                        <a href="#A" class="list-group-item list-group-item-action" data-toggle="modal"
+                            data-target="#simpleModalHiring" onclick="showModal('simpleModalHiring')">We are Hiring</a>
+                        <a href="#B" class="list-group-item list-group-item-action" data-toggle="modal"
+                            data-target="#simpleModalRecommendations"
+                            onclick="showModal('simpleModalRecommendations')">Recommendations</a>
+                        <a href="#B" class="list-group-item list-group-item-action" data-toggle="modal"
+                            data-target="#simpleModalBotmonIndicator"
+                            onclick="showModal('simpleModalBotmonIndicator')">Botmon Indicator</a>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+        <div class="list-group" style="margin: 2rem auto;text-align: center;">
+            <a href="#B" class="list-group-item list-group-item-action"><label>2023</label></a>
+        </div>
+    </section>
+
+    <div class="modal fade" id="simpleModalHiring" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <label class="modal-title">We Are Hiring</label>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="mailto:test@gmail.com" target="_blank">
+                        <div class="input-group">
+                            <span class="input-group-text" id="subscriber">Username</span>
+                            <input type="text" class="form-control" placeholder="Username"
+                                aria-describedby="subscriber">
+                        </div><br>
+                        <div class="input-group">
+                            <span class="input-group-text" id="subscriber">E-Mail</span>
+                            <input type="email" class="form-control" placeholder="inputEmail@isEmail.com"
+                                aria-describedby="subscriber">
+                        </div><br>
+                        <div class="modal-footer"> <input class="btn btn-dark" type="submit" value="Submit"
+                                data-target="_blank" />
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="simpleModalRecommendations" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="list-group">
+                        <a href="#update_botmon" class="list-group-item list-group-item-action" aria-current="true">
+                            <div class="d-flex w-100 justify-content-between">
+                                <label class="mb-1">Product: Subscription</label>
+
+                            </div>
+                            <small class="text-body-light"> ... for Beginners and Traders</small>
+                        </a>
+
+                        <a href="#update_botmon" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <label class="mb-1">Product: Access</label>
+
+                            </div>
+                            <small class="text-body-light">... for Traders using AI-Bot, Reflecting to Crypto News,
+                                Focused on Various Currencies </small>
+                        </a>
+                        <a href="#update_botmon" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <label class="mb-1">Product: Botmon</label>
+                            </div>
+                            <small class="text-body-light">... for Traders with Programming Skills - modify code,
+                                implement new Functionality, Control Workflow by Yourself, Notify others</small>
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="simpleModalBotmonIndicator" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <label class="modal-title">Botmon Indicator</label>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="owner_info">Made By Botmon Owner<br> Indicator and Signal Functionality, Buy|Sell</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
-
-<script src="./page.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<script src="./page.js">
+</script>
+<script>
+    feather.replace();
+</script>
 
 </html>

@@ -1,14 +1,19 @@
-
+html {
+    scroll-padding-top: 14rem;
+}
 
 .custom-tooltip {
-  --bs-tooltip-bg: #8b0000;
-  --bs-tooltip-color: white;
+    --bs-tooltip-bg: #8b0000;
+    --bs-tooltip-color: white;
 }
+
 label {
     font-size: 1.6rem;
     font-weight: 700;
+    display: inline-block
 }
-.navbar{
+
+.navbar {
     background-color: #8b0000;
     color: white;
     padding: 2rem;
@@ -17,48 +22,55 @@ label {
     top: 2%;
     right: 2%;
     left: 2%;
-    z-index: 1;
+    z-index: 2;
 }
 
-strong{
- font-size: 2rem;
+section {
+    margin-top: 4rem;
 }
-.testmode{
+
+strong {
+    font-size: 2rem;
+}
+
+.testmode {
     border-width: 2px;
     border-style: solid;
     border-radius: 1rem;
     padding: 1% 5%;
 }
 
-.main-container{
+.main-container {
     margin: 12rem 4%;
 }
+
 .card {
     text-align: center;
 }
-.offer{
+
+.offer {
     width: 50%;
     margin: auto;
 }
 
-.main_sections{
+.main_sections {
     font-size: 3rem;
 }
 
-
-#get_subscription {
-    margin: 2rem auto;
+.anchor-define {
+    width: unset;
+    text-decoration: unset;
+    margin: auto;
     width: 25rem;
+    display: inline-block;
+    text-align: center;
+
 }
 
-#get_access {
-    width: 25rem;
-    margin: 2rem auto;
-}
-
-#get_product {
-    width: 25rem;
-    margin: 2rem auto;
+#offers a {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    ;
 }
 
 #get_subscription:hover {
@@ -77,6 +89,48 @@ strong{
     border-width: 2px;
 
 }
-span{
+
+span {
     width: 14rem;
+}
+
+.offcanvas,
+.offcanvas-end {
+    width: 40% !important;
+}
+
+.simplerow span {
+    width: unset;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #8b0000 !important;
+}
+
+
+.modal-dialog {
+    height: 100%;
+    margin: 14rem auto;
+    text-align: center;
+}
+
+.modal-body p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 1rem;
+}
+
+
+
+.list-group-item:focus {
+    background-color: #8b0000 !important;
+    color: white !important;
+
+}
+
+#owner_info {
+    background-color: #8b0000 !important;
+    color: white !important;
+    padding: 2rem;
+    font-size: 1.4rem;
 }
