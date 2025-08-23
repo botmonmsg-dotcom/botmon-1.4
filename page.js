@@ -9,17 +9,26 @@ function showSection(value) {
         case "subscription": {
             uncollpase("access")
             uncollpase("product")
+            uncollpase("indicator")
 
             break;
         }
         case "access": {
             uncollpase("subscription")
             uncollpase("product")
+            uncollpase("indicator")
+            break;
+        }
+        case "indicator": {
+            uncollpase("subscription")
+            uncollpase("access")
+            uncollpase("product")
             break;
         }
         case "product": {
             uncollpase("subscription")
             uncollpase("access")
+            uncollpase("indicator")
             break;
         }
     }
@@ -30,15 +39,15 @@ function refreshAnchor(value) {
     let elements = document.getElementsByClassName("anchor-define");
 
     for (let i = 0; i < elements.length; i++) {
-        let element=elements[i]
+        let element = elements[i]
 
-        if(element.classList.contains("isActive")){
+        if (element.classList.contains("isActive")) {
             element.classList.remove("isActive")
-            element.setAttribute("href","#get_"+value)
+            element.setAttribute("href", "#get_" + value)
         }
-        else if(!element.classList.contains("isActive")){
+        else if (!element.classList.contains("isActive")) {
             element.classList.add("isActive")
-            element.setAttribute("href","#products_info")
+            element.setAttribute("href", "#products_info")
         }
     }
 
@@ -65,8 +74,8 @@ function clickViewBoard() {
 }
 
 var myModal = new bootstrap.Modal(document.getElementById('simpleModal'), {})
-//myModal.show()
+myModal.show()
 
-function showModal(value){
+function showModal(value) {
     new bootstrap.Modal(document.getElementById(value), {}).show()
 }
