@@ -1,13 +1,78 @@
 :root {
-    --base_color: white;
+    --bg_color: white;
+    --base_color: black;
+    --red_color_touch: #8b0000
 }
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg_color: black;
+        --base_color: white;
+        --red_color_touch: #580f11;
+        /* #6f1113;*/
+    }
+
+    html,
+    body {
+        color: var(--base_color) !important;
+        background-color: var(--bg_color) !important;
+
+    }
+
+    a {
+        background-color: var(--bg_color) !important;
+        color: var(--base_color) !important;
+    }
+
+    .offcanvas,
+    .offcanvas-end {
+        background-color: var(--bg_color);
+        color: var(--base_color);
+        width: 40rem;
+    }
+
+    .text-muted {
+        color: white !important;
+    }
+
+    .anchor-define {
+        box-shadow: 0px 2px 1rem var(--base_color) !important;
+    }
+
+    .inactive {
+        text-decoration-thickness: 6px !important;
+    }
+
+    .input-group-text,
+    .form-control {
+        color: var(--base_color) !important;
+        background-color: var(--red_color_touch);
+    }
+
+    .form-control:focus {
+        background-color: var(--red_color_touch);
+    }
+
+    ::placeholder {
+        color: var(--base_color) !important;
+        opacity: 50% !important;
+    }
+
+    .modal-content {
+        color: var(--base_color);
+        background-color: var(--bg_color);
+
+        border-width: 2px;
+        box-shadow: 0px 2px 1rem var(--base_color) !important;
+    }
+}
+
 
 html {
     scroll-padding-top: 14rem;
 }
 
 .custom-tooltip {
-    --bs-tooltip-bg: #8b0000;
+    --bs-tooltip-bg: var(--red_color_touch);
     --bs-tooltip-color: white;
 }
 
@@ -18,7 +83,7 @@ label {
 }
 
 .navbar {
-    background-color: #8b0000 !important;
+    background-color: var(--red_color_touch) !important;
     color: white;
     padding: 2rem;
     border-radius: 1rem;
@@ -89,18 +154,18 @@ strong {
 }
 
 #get_subscription:hover {
-    border-color: #8b0000;
+    border-color: var(--red_color_touch);
     border-width: 2px;
 }
 
 #get_access:hover {
-    border-color: #8b0000;
+    border-color: var(--red_color_touch);
     border-width: 2px;
 
 }
 
 #get_product:hover {
-    border-color: #8b0000;
+    border-color: var(--red_color_touch);
     border-width: 2px;
 
 }
@@ -123,7 +188,7 @@ input {
     margin: 1rem;
     padding: 1rem;
     font-size: 1rem;
-    background-color: #8b0000 !important;
+    background-color: var(--red_color_touch) !important;
 }
 
 
@@ -142,13 +207,13 @@ input {
 
 
 .list-group-item:focus {
-    background-color: #8b0000 !important;
+    background-color: var(--red_color_touch) !important;
     color: white !important;
 
 }
 
 #owner_info {
-    background-color: #8b0000 !important;
+    background-color: var(--red_color_touch) !important;
     color: white !important;
     padding: 2rem;
     font-size: 1.4rem;
@@ -157,6 +222,7 @@ input {
 .simple_divider {
     margin-bottom: 4rem;
 }
+
 
 @media (max-width: 700px) {
     #nav_list_group {
@@ -182,53 +248,6 @@ input {
 
     .input-group-text {
         min-width: 8rem !important;
-    }
-
-}
-
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --base_color: black;
-    }
-
-    html,
-    body {
-        color: black !important;
-        background-color: white !important;
-        border-color: black !important;
-    }
-
-    .offcanvas,
-    .offcanvas-end {
-        width: 40rem !important;
-    }
-}
-
-@media (prefers-color-scheme: darked) {
-    :root {
-        --base_color: white;
-
-    }
-
-    html,
-    body {
-        color: white !important;
-        background-color: black !important;
-        border-color: white !important;
-    }
-
-    a {
-        background-color: black !important;
-        border-color: white !important;
-        color: white !important;
-    }
-
-    .offcanvas,
-    .offcanvas-end {
-        background-color: black;
-        color: white;
-        width: 40rem;
     }
 
 }
@@ -266,12 +285,13 @@ input {
 
     from {
 
-                border-color: #8b0000;
+        border-color: var(--red_color_touch);
         border-width: 4px;
         border-style: solid;
     }
 
     to {
+
         border-width: 4px;
         border-style: solid;
     }
@@ -293,24 +313,23 @@ input {
 
     from {
         opacity: 100%;
-        transform: translate(500%,-600%)
-
+        transform: translate(500%, -600%)
     }
 
     to {
         opacity: 0%;
-        transform: translate(500%,-600%)
+        transform: translate(500%, -600%)
     }
 }
 
 .showup_item {
     animation: showup 2s infinite;
-    animation-timing-function:ease-in-out;
+    animation-timing-function: ease-in-out;
 }
 
 .inactive {
     text-decoration: line-through;
-    text-decoration-color: #8b0000;
+    text-decoration-color: var(--red_color_touch);
     text-decoration-thickness: 4px;
 }
 
