@@ -186,6 +186,7 @@ input {
 
 }
 
+
 @media (prefers-color-scheme: light) {
     :root {
         --base_color: black;
@@ -229,7 +230,6 @@ input {
         color: white;
         width: 40rem;
     }
-
 
 }
 
