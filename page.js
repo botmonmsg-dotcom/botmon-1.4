@@ -40,7 +40,7 @@ function refreshAnchor(value) {
 
     for (let i = 0; i < elements.length; i++) {
         let element = elements[i]
-
+        if (element.classList.contains("isInactive")) { continue; }
         if (element.classList.contains("isActive")) {
             element.classList.remove("isActive")
             element.setAttribute("href", "#get_" + value)
@@ -73,8 +73,8 @@ function clickViewBoard() {
 
 }
 
-var myModal = new bootstrap.Modal(document.getElementById('simpleModal'), {})
-myModal.show()
+var simpleModal = new bootstrap.Modal(document.getElementById('simpleModal'), {})
+simpleModal.show()
 
 function showModal(value) {
     new bootstrap.Modal(document.getElementById(value), {}).show()

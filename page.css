@@ -105,8 +105,12 @@ strong {
 
 }
 
-span {
-    width: 14rem;
+.input-group-text {
+    width: 8rem;
+}
+
+input {
+    min-width: 8rem !important;
 }
 
 .offcanvas,
@@ -150,7 +154,7 @@ span {
     font-size: 1.4rem;
 }
 
-hr {
+.simple_divider {
     margin-bottom: 4rem;
 }
 
@@ -170,6 +174,14 @@ hr {
 
     html {
         scroll-padding-top: 20rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .input-group-text {
+        min-width: 8rem !important;
     }
 
 }
@@ -221,13 +233,8 @@ hr {
 
 }
 
-
-
-
-
-
-
 .anchor-define {
+    width: 20rem;
     animation: borderanimate 2s infinite;
     animation-timing-function: ease-in-out;
 
@@ -258,12 +265,13 @@ hr {
 @keyframes borderanimate {
 
     from {
+
+                border-color: #8b0000;
         border-width: 4px;
         border-style: solid;
     }
 
     to {
-        border-color: #8b0000;
         border-width: 4px;
         border-style: solid;
     }
@@ -278,4 +286,36 @@ hr {
     }
 
     to {}
+}
+
+
+@keyframes showup {
+
+    from {
+        opacity: 100%;
+        transform: translate(500%,-600%)
+
+    }
+
+    to {
+        opacity: 0%;
+        transform: translate(500%,-600%)
+    }
+}
+
+.showup_item {
+    animation: showup 2s infinite;
+    animation-timing-function:ease-in-out;
+}
+
+.inactive {
+    text-decoration: line-through;
+    text-decoration-color: #8b0000;
+    text-decoration-thickness: 4px;
+}
+
+.inactive .anchor-define {
+    text-decoration: unset;
+    text-decoration-color: unset;
+    text-decoration-thickness: unset;
 }
