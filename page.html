@@ -10,10 +10,12 @@
     <link href="./page.css" rel="stylesheet">
 </head>
 
-<div id="navbar_main_position"></div>
 <nav class="navbar">
     <div class="container-fluid">
-        <label>Botmon 1.4 </label>
+        <div id="nav_list_group" class="list-group">
+            <label>Botmon 1.4</label>
+            <small class="animate_function" >Cryptocurrency Signal Provider | AI Trading Bot</small>
+        </div>
         <div class="testmode">
             <label> <span class="badge">Test Mode</label>
             <div class="progress bg-danger-subtle" role="progressbar" aria-label="Basic example" aria-valuenow="80"
@@ -27,6 +29,12 @@
 
 <body>
     <div class="main-container">
+
+
+
+
+
+
         <section id="botmon">
             <label class="main_sections">Botmon</label>
             <hr style="width: 50%;">
@@ -35,6 +43,7 @@
                 <span class="badge text-bg-secondary">Botmon-Mobile</span>
                 <span class="badge text-bg-secondary">Botmon-AI</span>
                 <span class="badge text-bg-secondary"> Botmon-Notifier</span>
+                <span class="badge text-bg-secondary"> Botmon-Indicator</span>
             </div>
 
         </section>
@@ -80,6 +89,7 @@
         </section>
 
         <section id="offers">
+
             <label class="main_sections">Products</label>
             <hr style="width: 50%;">
 
@@ -99,10 +109,20 @@
                     <div id="get_access" onclick="showSection('access')" data-bs-toggle="collapse" href="#access">
                         <div class="card-body" data-bs-toggle="tooltip" data-bs-placement="top"
                             data-bs-custom-class="custom-tooltip"
-                            data-bs-title="Get Access to Botmons complete Functionality.">
+                            data-bs-title="Get Access to Botmons complete Functionality">
                             <label class="card-title">Access</label>
                             <p>100€/Month</p>
 
+                        </div>
+                    </div>
+                </a>
+                <a class="anchor-define card shadow" href="#products_info">
+                    <div id="get_indicator" onclick="showSection('indicator')" data-bs-toggle="collapse"
+                        href="#indicator">
+                        <div class="card-body " data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip" data-bs-title="Claim Product: Botmon Indicator">
+                            <label class="card-title">Botmon Indicator</label>
+                            <p>x/Once</p>
                         </div>
                     </div>
                 </a>
@@ -111,7 +131,7 @@
                         <div class="card-body " data-bs-toggle="tooltip" data-bs-placement="top"
                             data-bs-custom-class="custom-tooltip" data-bs-title="Claim Product: Botmon">
                             <label class="card-title">Product</label>
-                            <p>x/Month</p>
+                            <p>x/Once</p>
                         </div>
                     </div>
                 </a>
@@ -121,11 +141,13 @@
         <hr>
         <section id="products_info">
             <section id="subscription" class="collapse offer">
+
                 <label data-bs-toggle="offcanvas" data-bs-target="#offcanvas_subscription"
-                    aria-controls="offcanvasBottom">Subscription <i data-feather="bell"></i></label>
-                <form action="mailto:test@gmail.com" target="_blank" class="container-fluid">
+                    aria-controls="offcanvasBottom">Subscription <i data-feather="bell"></i><i class="arrow-animate"
+                        data-feather="arrow-left"></i></label>
+                <form action="mailto:botmonmsg@gmail.com" target="_blank" class="container-fluid">
                     <br>
-                    <input  class="form-control" style="visibility: hidden;" value="Subscription" />
+                    <input class="form-control" style="visibility: hidden;" value="subscription" />
                     <div class="input-group">
                         <span class="input-group-text" id="subscriber">Username</span>
                         <input type="text" class="form-control" placeholder="Username" aria-describedby="subscriber">
@@ -145,9 +167,9 @@
             <section id="access" class="collapse offer">
                 <label data-bs-toggle="offcanvas" data-bs-target="#offcanvas_access"
                     aria-controls="offcanvasBottom">Access
-                    <i data-feather="codepen"></i></label>
-                <form action="mailto:test@gmail.com" target="_blank"  class="container-fluid"><br>
-                    <input  class="form-control" style="visibility: hidden;" value="Access"/>
+                    <i data-feather="codepen"></i><i class="arrow-animate" data-feather="arrow-left"></i></label>
+                <form action="mailto:botmonmsg@gmail.com" target="_blank" class="container-fluid"><br>
+                    <input class="form-control" style="visibility: hidden;" value="access" />
                     <div class="input-group">
                         <span class="input-group-text" id="subscriber">Username</span>
                         <input type="text" class="form-control" placeholder="Username" aria-describedby="subscriber">
@@ -164,11 +186,34 @@
                 </form>
             </section>
 
+            <section id="indicator" class="collapse offer">
+                <label data-bs-toggle="offcanvas" data-bs-target="#offcanvas_indicator"
+                    aria-controls="offcanvasBottomIndicator">Botmon Indicator
+                    <i data-feather="bookmark"></i><i class="arrow-animate" data-feather="arrow-left"></i></label>
+                <form action="mailto:botmonmsg@gmail.com" target="_blank" class="container-fluid"><br>
+                    <input class="form-control" style="visibility: hidden;" value="indicator" />
+                    <div class="input-group">
+                        <span class="input-group-text" id="subscriber">Username</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-describedby="subscriber">
+                    </div><br>
+                    <div class="input-group">
+                        <span class="input-group-text" id="submail">E-Mail</span>
+                        <input type="email" class="form-control" placeholder="E-Mail" aria-describedby="submail">
+                    </div><br>
+                    <div class="input-group">
+                        <span class="input-group-text" id="submessage">Message</span>
+                        <input type="text" class="form-control" placeholder="Message" aria-describedby="submessage">
+                    </div><br>
+                    <input class="btn btn-outline-success" type="submit" value="Get Indicator">
+                </form>
+            </section>
+
             <section id="product" class="collapse offer">
                 <label data-bs-toggle="offcanvas" data-bs-target="#offcanvas_product"
-                    aria-controls="offcanvasBottom">Product <i data-feather="codesandbox"></i></label>
-                <form action="mailto:test@gmail.com" target="_blank"  class="container-fluid"><br>
-                    <input  class="form-control" style="visibility: hidden;" value="Product" />
+                    aria-controls="offcanvasBottom">Product <i data-feather="codesandbox"></i><i class="arrow-animate"
+                        data-feather="arrow-left"></i></label>
+                <form action="mailto:botmonmsg@gmail.com" target="_blank" class="container-fluid"><br>
+                    <input class="form-control" style="visibility: hidden;" value="product" />
                     <div class="input-group">
                         <span class="input-group-text" id="subscriber">Username</span>
                         <input type="text" class="form-control" placeholder="Username" aria-describedby="subscriber">
@@ -190,11 +235,12 @@
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas_subscription" aria-labelledby="offcanvasLabel">
         <div class="offcanvas-header">
             <label style="display: block;" class="offcanvas-title" id="offcanvasLabel">Get Notified</label>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button " class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <div class="row simplerow">
-                <span class="badge text-bg-secondary">Email Notification for Buy Signals by The Botmon Indicator</span>
+                <span class="badge text-bg-secondary">Email Notification by The Botmon Indicator</span>
+                <span class="badge text-bg-secondary">Buy and Sell Signals</span>
             </div>
         </div>
     </div>
@@ -212,6 +258,18 @@
                 <span class="badge text-bg-secondary"> Signals</span>
                 <span class="badge text-bg-secondary"> AI-Bot Trading</span>
                 <span class="badge text-bg-secondary"> Notification by The Botmon Indicator</span>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas_indicator" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+            <label style="display: block;" class="offcanvas-title" id="offcanvasLabel">Claim Product - Botmon
+                Indicator</label>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row simplerow">
+                <span class="badge text-bg-secondary">Botmon Indicator</span>
             </div>
         </div>
     </div>
@@ -261,7 +319,7 @@
             <tr>
                 <td>
                     <div class="list-group" style="margin:auto;text-align: center;">
-                        <a href="#" class="list-group-item list-group-item-action disabled bg-success text-light">Bottom
+                        <a href="#" class="list-group-item list-group-item-action disabled bg-success text-light">
                             Navigation</a>
                         <a href="#botmon" class="list-group-item list-group-item-action">Botmon</a>
                         <a href="#functions" class="list-group-item list-group-item-action">Functions</a>
@@ -272,12 +330,12 @@
                     <div class="list-group" style="margin:auto;text-align: center;">
                         <a href="#"
                             class="list-group-item list-group-item-action disabled bg-success text-light">More...</a>
-                        <a href="#A" class="list-group-item list-group-item-action" data-toggle="modal"
+                        <a href="#update_botmon" class="list-group-item list-group-item-action" data-toggle="modal"
                             data-target="#simpleModalHiring" onclick="showModal('simpleModalHiring')">We are Hiring</a>
-                        <a href="#B" class="list-group-item list-group-item-action" data-toggle="modal"
+                        <a href="#update_botmon" class="list-group-item list-group-item-action" data-toggle="modal"
                             data-target="#simpleModalRecommendations"
                             onclick="showModal('simpleModalRecommendations')">Recommendations</a>
-                        <a href="#B" class="list-group-item list-group-item-action" data-toggle="modal"
+                        <a href="#update_botmon" class="list-group-item list-group-item-action" data-toggle="modal"
                             data-target="#simpleModalBotmonIndicator"
                             onclick="showModal('simpleModalBotmonIndicator')">Botmon Indicator</a>
                     </div>
@@ -298,7 +356,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="mailto:test@gmail.com" target="_blank">
+                    <form action="mailto:botmonmsg@gmail.com" target="_blank">
                         <div class="input-group">
                             <span class="input-group-text" id="subscriber">Username</span>
                             <input type="text" class="form-control" placeholder="Username"
@@ -342,6 +400,14 @@
                             </div>
                             <small class="text-body-light">... for Traders using AI-Bot, Reflecting to Crypto News,
                                 Focused on Various Currencies </small>
+                        </a>
+                        <a href="#update_botmon" class="list-group-item list-group-item-action" aria-current="true">
+                            <div class="d-flex w-100 justify-content-between">
+                                <label class="mb-1">Product: Botmon Indicator</label>
+
+                            </div>
+                            <small class="text-body-light"> ... for Traders - implement Indicator into your strategy
+                            </small>
                         </a>
                         <a href="#update_botmon" class="list-group-item list-group-item-action">
                             <div class="d-flex w-100 justify-content-between">

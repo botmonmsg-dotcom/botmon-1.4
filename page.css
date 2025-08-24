@@ -154,6 +154,15 @@ hr {
 
 }
 
+@media (max-width: 500px) {
+
+    html {
+        scroll-padding-top: 20rem;
+    }
+
+}
+
+
 @media (prefers-color-scheme: light) {
     :root {
         --base_color: black;
@@ -198,5 +207,63 @@ hr {
         width: 40rem;
     }
 
+}
+
+
+
+
+
+
+
+.anchor-define {
+    animation: borderanimate 2s infinite;
+    animation-timing-function: ease-in-out;
 
 }
+
+.arrow-animate {
+    animation: pointto 2s infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+.animate_function {
+    animation: animatefunction 2s alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes pointto {
+
+    from {
+        transform: translateX(200%);
+    }
+
+    to {
+        transform: translateX(20%);
+    }
+}
+
+@keyframes borderanimate {
+
+    from {
+        border-width: 4px;
+        border-style: solid;
+    }
+
+    to {
+        border-color: #8b0000;
+        border-width: 4px;
+        border-style: solid;
+    }
+}
+
+@keyframes animatefunction {
+
+    from {
+        font-size: 2rem;
+        transform: translateX(100%);
+
+    }
+
+    to {}
+}
+
