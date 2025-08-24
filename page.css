@@ -42,6 +42,18 @@ strong {
     border-style: solid;
     border-radius: 1rem;
     padding: 1% 5%;
+    animation: animate-box 2s infinite;
+}
+
+@keyframes animate-box {
+    from {
+        box-shadow: 0 1px 0rem black;
+    }
+
+    to {
+        box-shadow: 0 1px 3rem black;
+    }
+
 }
 
 .main-container {
@@ -231,6 +243,7 @@ hr {
     animation: animatefunction 2s alternate;
     animation-timing-function: ease-in-out;
 }
+
 @keyframes pointto {
 
     from {
@@ -266,4 +279,3 @@ hr {
 
     to {}
 }
-
