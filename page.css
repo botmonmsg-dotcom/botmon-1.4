@@ -3,12 +3,12 @@
     --base_color: black;
     --red_color_touch: #8b0000
 }
+
 @media (prefers-color-scheme: dark) {
     :root {
         --bg_color: black;
         --base_color: white;
         --red_color_touch: #580f11;
-        /* #6f1113;*/
     }
 
     html,
@@ -63,6 +63,10 @@
 
         border-width: 2px;
         box-shadow: 0px 2px 1rem var(--base_color) !important;
+    }
+    
+     .btn-close{
+        background-color: var(--red_color_touch) !important;
     }
 }
 
